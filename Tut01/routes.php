@@ -1,15 +1,5 @@
-<?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -26,11 +16,8 @@
 |
 */
 
-
-
 Route::get('/', "WelcomeController@index");
 Route::get('contact', "WelcomeController@Contact");
-
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +40,13 @@ Route::get('contact', "WelcomeController@Contact");
      return "bar";
  });
  
- 
+/*
+|--------------------------------------------------------------------------
+| Route with wild card
+|--------------------------------------------------------------------------
+|
+| Route::get('contact/{id}', "WelcomeController@show");
+|
+*/
+
+Route::get('contact/{id}', "WelcomeController@show"); 
