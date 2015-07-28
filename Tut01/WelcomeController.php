@@ -17,7 +17,6 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-
 	/*
 	|--------------------------------------------------------------------------
 	| Returning string output
