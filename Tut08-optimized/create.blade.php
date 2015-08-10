@@ -3,7 +3,7 @@
 @section('content')
 
 {!! Form::open(['url'=>'Blog']) !!}
-	@include('blog.form', ['Buttontext'=>'Edit Blog Articles'])
+	@include('blog.form', ['Buttontext'=>'Add Blog Articles'])
 {!! Form::close() !!}
 
 @include('errors.errorlist')
