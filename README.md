@@ -33,3 +33,7 @@ After that go inside into blog folder and type
 root@moin-VirtualBox:/var/www/html/blog# composer update
 
 All done!
+
+To shrtenup 
+
+doskey pa=php artisan $*
